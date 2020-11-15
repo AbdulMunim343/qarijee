@@ -1,0 +1,56 @@
+nav{
+    width:100%;
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+    height: 10vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #4CA4AB;
+}
+#logoSection{
+flex: 1;
+cursor: pointer;
+}
+#logoSection>h2{
+    text-align: left;
+    margin-left: 1vw;
+
+}
+#NavButtonsSection{
+flex: 2;
+text-align: right
+}
+.NavButtons{
+width: 15%;
+height: 100%;
+outline: none;
+border: none;
+background-color: inherit;
+color: #4CA4AB;
+cursor: pointer;
+}
+.NavButtons:hover{
+    background-color: #4CA4AB;
+    color: #ffffff;
+}
+
+@media screen and (max-width:860px){
+    .NavButtonsSection{
+        flex: 2;
+    }
+    .NavButtons{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:640){
+    .NavButtonsSection{
+        flex: 5;
+    }
+    .NavButtons{
+        width: 20%;
+    }
+}
