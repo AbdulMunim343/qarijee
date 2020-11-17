@@ -1,0 +1,42 @@
+#banner{
+    height: 90vh;
+    /* background-color: red; */
+    background-image: url('../assets//homepage//HolyQuranBannerBackground.jpg');
+    overflow: hidden;
+}
+
+#QuranCaligraphySection{
+    width: 50vw;
+    position: absolute;
+    right: 0;
+    /* background-color: red; */
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#QuranCaligraphySection>img{
+    width: 70% !important;
+}
+
+#bannerContentSection{
+    width: 50vw;
+    position:absolute;
+    left: 0;
+    /* background-color: purple; */
+    height: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#bannerContentSection>h1{
+    text-align: center;
+    margin: 1%;
+}
+#bannerContentSection>h3{
+    text-align: justify;
+    margin: 1%;
+}
