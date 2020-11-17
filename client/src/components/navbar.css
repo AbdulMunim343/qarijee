@@ -12,6 +12,11 @@ nav{
 }
 #logoSection{
 flex: 1;
+height: 100%;
+/* background-color: red; */
+display: flex;
+justify-content: center;
+align-items: center;
 cursor: pointer;
 }
 #logoSection>h2{
@@ -33,7 +38,7 @@ color: #4CA4AB;
 cursor: pointer;
 }
 .NavButtons:hover{
-    background-color: #4CA4AB;
+    background-color: #54B5EC;
     color: #ffffff;
 }
 
@@ -46,11 +51,11 @@ cursor: pointer;
     }
 }
 
-@media screen and (max-width:640){
+@media screen and (max-width:720px){
     .NavButtonsSection{
         flex: 5;
     }
     .NavButtons{
-        width: 20%;
+        display: none;
     }
 }

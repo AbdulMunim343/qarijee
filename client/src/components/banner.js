@@ -15,7 +15,7 @@ export default function Banner(props) {
             <section id="bannerContentSection">
                 <Zoom left cascade>
                     <h1>
-                        YOUR JOURNEY TO
+                        YOUR JOURNEY TO   
                         THE GLORIOUS QURAN
                      </h1>
                 </Zoom>
