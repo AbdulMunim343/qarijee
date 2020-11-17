@@ -9,6 +9,9 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     color: #4CA4AB;
+    position: fixed;
+    top: 0%;
+    z-index: 1;
 }
 #logoSection{
 flex: 1;
