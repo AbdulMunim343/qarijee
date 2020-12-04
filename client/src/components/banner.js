@@ -14,13 +14,13 @@ export default function Banner(props) {
             </section>
             <section id="bannerContentSection">
                 <Zoom left cascade>
-                    <h1>
+                    <h1 style={{color:"white"}}>
                         YOUR JOURNEY TO   
                         THE GLORIOUS QURAN
                      </h1>
                 </Zoom>
                 <Zoom right cascade>
-                    <h3>
+                    <h3 style={{color:"white"}}>
                         Learn with the best Tutors you choose for Tajweed, Recitation,
                         Hifz and Arabic lessons, in your feasible timings...
                     </h3>
