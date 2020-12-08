@@ -1,13 +1,12 @@
 import { Card, Col, Row } from "antd";
 import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 
 export default function Courses(props) {
     return (
         <>
-            <h1>Courses</h1>
+            <h1 style={{textAlign:'center'}}>Courses</h1>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-            <Fade left>
+            <Fade bottom>
                 <Row justify='center'>
                     <Col span={18}>
                         <Card hoverable title="Tafseer">
@@ -18,7 +17,7 @@ export default function Courses(props) {
                 </Row>
             </Fade>
             <br/>
-            <Fade right>
+            <Fade bottom>
                 <Row justify='center'>
                     <Col span={18}>
                         <Card hoverable title="Hadith">

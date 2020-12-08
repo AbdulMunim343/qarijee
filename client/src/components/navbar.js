@@ -19,6 +19,7 @@ export default function NavBar() {
         let check=prompt("Are you sure, want to logout")
         if(check=="yes"){firebase.auth().signOut().then(res=>setUser(null))}
     }
+    if(firebase.auth().currentUser != null){document.title = userData.profile.name}
     return (
         <>
             <nav>
@@ -38,6 +39,7 @@ export default function NavBar() {
                                 <button id='userProfileButton' onClick={() => handleSignOut()}>
                                     <img src={userData!=null?userData.profile.picture:""} />
                                 </button>
+                                
                         }
                     </section>
                 </Fade>
