@@ -1,0 +1,61 @@
+/*I Pad*/
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .hero {
+    height: 66vh;
+    text-align: center;
+  }
+
+  /*top Banner Start*/
+  .hero_container {
+    flex-direction: column;
+    .cRight {
+      width: 100% !important;
+      align-items: center;
+      text-align: center;
+      height: 43vh !important;
+    }
+    .cLeft {
+      width: 100% !important;
+      align-items: center;
+      text-align: center;
+      height: 0vh !important;
+      img {
+        margin-top: 7rem;
+      }
+    }
+  }
+  /*top Banner end*/
+
+  /*qarijee start*/
+  .tech_conatiner {
+    flex-wrap: wrap;
+    .techBox {
+      width: calc(100% / 2.1) !important;
+      margin-bottom: 20px;
+    }
+    .tecImg {
+      img {
+        object-fit: contain !important;
+      }
+    }
+  }
+  /*qarijee end*/
+
+  /*counter Conatiner start*/
+  .counter_container {
+    flex-wrap: wrap;
+    .counterBox {
+      width: calc(100% / 1);
+    }
+  }
+  /*counter Conatiner start*/
+
+  /*footer start*/
+  .FlexFooter {
+    flex-wrap: wrap;
+    .footerBox {
+      width: calc(100% / 2.1) !important;
+    }
+  }
+  /*footer End*/
+}

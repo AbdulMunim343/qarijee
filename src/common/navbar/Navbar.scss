@@ -1,0 +1,141 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixin.scss";
+
+header {
+  background: $bgWhite;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  nav {
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      h1 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $textprim;
+      }
+    }
+
+    ul {
+      display: flex;
+      margin: 0px;
+      li {
+        white-space: nowrap;
+        padding: 10px 0 10px 28px;
+        cursor: pointer;
+        span {
+          color: $textsecon;
+          transition: 0.3s;
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.nav_active {
+  span {
+    color: $textprim;
+  }
+}
+
+.Login_container {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+
+  .login_warpper {
+    width: 320px;
+    height: 400px;
+    background-color: $bgWhite;
+    max-width: 100%;
+    padding: 30px 15px 45px;
+  }
+
+  .top_log {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-size: 16px;
+      text-align: left;
+
+      a {
+        color: #e25c4c;
+      }
+    }
+    .cls {
+      font-size: 25px;
+      color: #909090;
+      cursor: pointer;
+    }
+  }
+
+  hr {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 0 none;
+    height: 1px;
+    margin: 20px 0;
+  }
+
+  h1 {
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 20px !important;
+  }
+  input {
+    padding-top: 8px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px !important;
+    height: 40px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    color: #fff;
+    border: 1px solid #b34336;
+    background-color: #e25c4c;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    padding: 0px 30px 0px 30px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .lost {
+    display: block;
+    color: #b2b0b0;
+    float: none;
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
+}

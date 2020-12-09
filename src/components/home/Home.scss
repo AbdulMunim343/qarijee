@@ -1,0 +1,306 @@
+@import "../../sass/mixin.scss";
+@import "../../sass/variables.scss";
+@import "../../sass/mediaquery.scss";
+.hero {
+  width: 100%;
+  height: 80vh;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../assets/img/quran_bg.jpg);
+
+  .hero_container {
+    width: 1140px;
+    max-width: 100%;
+    padding: 0px 15px;
+    display: flex;
+    margin: auto;
+
+    .cRight {
+      width: 50%;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      h1 {
+        font-size: 42px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $textWhite;
+      }
+
+      h2 {
+        color: $textWhite;
+        margin: 10px 0 0 0;
+        font-size: 20px;
+      }
+      select {
+        width: 60%;
+        background-color: #fff;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        padding: 0.375rem 0.75rem;
+        margin: 20px 0 0 0;
+      }
+    }
+
+    .cLeft {
+      width: 50%;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.co_title {
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px !important;
+    color: $textsecon;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+.cardholder {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  .card_img {
+    width: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .card_details2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    .card_had {
+      font-weight: 700;
+      margin-bottom: 15px !important;
+      font-size: 18px;
+      color: $textsecon !important;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+
+    .card_footer {
+      display: flex;
+      align-items: center;
+      .thumb_site {
+        display: flex;
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+        }
+
+        span {
+          padding-left: 10px;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+
+      p {
+        font-size: 12px;
+        margin: 0px !important;
+        font-weight: bold;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    .card_had {
+      color: $textprim !important;
+    }
+  }
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    padding: 0.375rem 0.75rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: $btnbg !important;
+    border-color: $btnbg !important;
+    color: white;
+    border-radius: 5px;
+    &:hover {
+      background-color: $btnhov !important;
+      border-color: $btnhov !important;
+    }
+  }
+}
+
+.qariBox_cotainer {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+
+  .qariBox {
+    width: calc(100% / 3.2);
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    img {
+      height: 250px;
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+    }
+    h3 {
+      margin: 10px 0px;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.tech_conatiner {
+  display: flex;
+  justify-content: space-between;
+
+  .techBox {
+    width: calc(100% / 4.3);
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    &:hover {
+      .social {
+        opacity: 1;
+        bottom: 15px;
+      }
+    }
+  }
+
+  .tecImg {
+    text-align: center;
+    position: relative;
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+
+  .tectxt {
+    padding: 25px 15px;
+    h4 {
+      font-weight: 700;
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+
+    span {
+      font-size: 13px;
+      font-weight: 400;
+
+      color: $colorgrey;
+    }
+  }
+}
+
+.counter_container {
+  display: flex;
+  justify-content: space-between;
+  .counterBox {
+    width: calc(100% / 3.1);
+
+    span {
+      display: block;
+      text-align: center;
+      width: 100%;
+      font-size: 44px;
+      font-weight: 700;
+      color: $textprim;
+
+      border-bottom: 1px solid;
+    }
+
+    p {
+      margin: 0 0 20px 0;
+      font-size: 35px;
+      text-align: center;
+      color: $textsecon;
+
+      font-weight: 700;
+    }
+  }
+}
+
+.bg_slider {
+  width: 100%;
+  background-image: url(../../assets/img/quran.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  .slider_without {
+    padding: 60px 0;
+    background: rgba(28, 106, 110, 0.75);
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+
+  a {
+    margin: 0 5px;
+
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    background: rgba(73, 181, 231, 0.8);
+    display: inline-block;
+    transition: ease-in-out 0.3s;
+    padding: 3px 9px;
+    i {
+      color: #fff;
+      font-size: 18px !important;
+    }
+  }
+}

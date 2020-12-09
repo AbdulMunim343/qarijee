@@ -1,0 +1,89 @@
+@import "../../sass/mixin.scss";
+@import "../../sass/variables.scss";
+
+.main_courses {
+  padding: 100px 15px 0px 15px;
+  width: 1140px;
+  max-width: 100%;
+  margin: auto;
+
+  .itleConatine {
+    display: flex;
+    border-bottom: 3px solid #2ca4ab;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #1b696e;
+    text-align: left;
+  }
+}
+
+.cardholder_member {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  .card_img3 {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    img {
+      height: 100%;
+      margin: 0px;
+      width: 150px;
+    }
+  }
+  .card_details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    margin-left: 180px;
+    .card_had {
+      font-weight: 700;
+      margin-bottom: 15px !important;
+      font-size: 18px;
+      color: $textsecon;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+
+    .card_footer {
+      display: flex;
+      align-items: center;
+      .thumb_site {
+        display: flex;
+        align-items: center;
+
+        img {
+          border-radius: 50%;
+        }
+
+        span {
+          padding-left: 10px;
+          font-size: 12px;
+          font-weight: bold;
+        }
+      }
+
+      p {
+        font-size: 12px;
+        margin: 0px !important;
+        font-weight: bold;
+        padding-left: 10px;
+      }
+    }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    .card_had {
+      color: $textprim;
+    }
+  }
+}
