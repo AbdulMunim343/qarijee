@@ -80,7 +80,7 @@ class Footer extends Component{
    </div>
    <div className="minifooter">
       <footer>
-         <span>&copy Copyright <b> Qari Jee </b> All Rights Reserved</span>
+         <span>&#169; Copyright <b> Qari Jee </b> All Rights Reserved</span>
          <span>  Designed by  <b> Qari Jee Inc. </b></span>
       </footer>
    </div>

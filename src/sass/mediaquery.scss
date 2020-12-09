@@ -59,3 +59,138 @@
   }
   /*footer End*/
 }
+
+@media (max-device-width: 375px) {
+  .hero {
+    height: 100vh;
+    text-align: center;
+  }
+
+  /*top Banner Start*/
+  .hero_container {
+    flex-direction: column;
+    height: 100vh;
+    padding: 100px 0px !important;
+    .cRight {
+      width: 100% !important;
+      align-items: center;
+      text-align: center;
+      height: 43vh !important;
+      h1 {
+        font-size: 22px !important;
+      }
+
+      h2 {
+        font-size: 16px !important;
+      }
+    }
+    .cLeft {
+      width: 100% !important;
+      align-items: center;
+      text-align: center;
+      height: 0vh !important;
+      img {
+        margin-top: 10rem;
+        width: 85%;
+      }
+    }
+  }
+  /*top Banner end*/
+
+  /*courses start*/
+  .cardholder {
+    flex-direction: column;
+    .card_img {
+      height: 32vh !important;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .card_img2 {
+      height: 32vh !important;
+      width: 100%;
+      position: inherit;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .card_details {
+      margin: 0px !important;
+    }
+  }
+
+  .cardholder_member {
+    flex-direction: column;
+    .card_details {
+      margin: 0px !important;
+    }
+    .card_img3 {
+      height: 32vh !important;
+      width: 100%;
+      position: inherit;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  /* why qarijee */
+  .qariBox_cotainer {
+    flex-direction: column;
+
+    .qariBox {
+      width: 100%;
+    }
+  }
+  /*qarijee*/
+  .tech_conatiner {
+    flex-direction: column;
+
+    .techBox {
+      width: 100% !important;
+      margin-bottom: 20px;
+    }
+  }
+
+  /*counter*/
+  .counter_container {
+    flex-direction: column;
+    .counterBox {
+      width: 100% !important;
+    }
+  }
+  /*contact*/
+  .Flex_contact {
+    flex-direction: column;
+    .icons_contaniner {
+      width: 100% !important;
+    }
+    .form_area {
+      width: 100% !important;
+    }
+  }
+
+  /*footer*/
+  .FlexFooter {
+    flex-direction: column;
+    .footerBox {
+      width: 100% !important;
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+}
