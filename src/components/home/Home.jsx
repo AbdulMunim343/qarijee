@@ -155,10 +155,11 @@ class Home extends Component {
             })}
             {/* courses  end*/}
             <div className="btnWrapper">
+                <Link style={{color:"white",textDecoration:"none"}} to="/courses" className="routerLink">
               <button>
-                <Link style={{color:"white",textDecoration:"none"}} to="/courses">
-                Show Mor
-              </Link>e</button>
+                Show More
+              </button>
+              </Link>
             </div>
           </div>
         </div>
