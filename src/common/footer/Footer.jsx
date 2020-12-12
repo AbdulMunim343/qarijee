@@ -79,10 +79,10 @@ class Footer extends Component {
                     <a className="icn">
                       <FaTwitter />
                     </a>
-                    <a className="icn">
+                    <a className="icn" target="_blank" href="https://www.facebook.com/QariJee.co/">
                       <FaFacebookF />
                     </a>
-                    <a className="icn">
+                    <a className="icn" target="_blank" href="https://join.skype.com/invite/iktGdMbAezzT">
                       <AiFillSkype />
                     </a>
                     <a className="icn">
