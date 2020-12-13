@@ -1,0 +1,115 @@
+@import "../../sass/mixin.scss";
+@import "../../sass/variables.scss";
+@import "../../sass/mediaquery.scss";
+.contact_main {
+  padding: 100px 15px 0px 15px;
+  width: 1140px;
+  max-width: 100%;
+  margin: auto;
+
+  .itleConatine {
+    display: flex;
+    border-bottom: 3px solid $textprim;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: $textsecon;
+    text-align: left;
+  }
+
+  .Flex_contact {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .icons_contaniner {
+    width: calc(100% / 3);
+
+    max-width: 100%;
+    .cont_icons {
+      font-size: 20px;
+      color: $textsecon;
+      float: left;
+      width: 44px;
+      height: 44px;
+      background: #ebf7fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+    .address {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+
+      &:hover {
+        .cont_icons {
+          background-color: $bgsecon;
+          color: $textWhite;
+        }
+      }
+    }
+    .addtxt {
+      padding: 0 0 0 10px;
+      h4 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: $textsecon;
+      }
+
+      p {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: $textprim;
+      }
+    }
+  }
+
+  .form_area {
+    width: calc(100% / 1.6);
+    max-width: 100%;
+
+    .input_warppper {
+      margin-bottom: 10px;
+      lable {
+        display: block !important;
+      }
+
+      input {
+        width: 100%;
+        height: calc(1.5em + 0.75rem + 2px);
+        outline: none;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      textarea {
+        width: 100%;
+
+        outline: none;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    }
+
+    .submit {
+      width: 100%;
+      padding: 0.6em 1em 0.4em;
+      color: $textWhite;
+      border-radius: 5px;
+      background-color: $btnbg;
+      text-align: center;
+      &:hover {
+        background-color: $btnhov !important;
+        border-color: $btnhov !important;
+      }
+    }
+  }
+}
