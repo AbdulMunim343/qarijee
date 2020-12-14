@@ -11,6 +11,10 @@ import Contact from './components/contact/Contact';
 import Navbar from './common/navbar/Navbar';
 import Footer from "./common/footer/Footer";
 
+//==============import Courses Sub pages=============//
+import Subcourses from './components/courses/subcourses/Subcourses';
+
+
 
 
 
@@ -25,6 +29,10 @@ class App extends Component{
                     <Route path='/courses' component={Courses}/>
                     <Route path='/membership' component={Membership}/>
                     <Route path='/contact' component={Contact}/>
+                    
+                    {/* Courses subpages */}
+                    <Route path='/sccourses' component={Subcourses}/>
+                    
                 </Switch>
             <Footer/>
             </>

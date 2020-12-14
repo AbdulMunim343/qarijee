@@ -3,6 +3,7 @@ import "../home/Home.scss";
 import External from "../../common/external/External";
 import WQ from "./WQ";
 import Qarijee_data from "./Qrijeebox";
+import Revslider from "../../common/external/Revslider";
 
 //======import images=====//
 import Holy from "../../assets/img/top_bg.png";
@@ -234,7 +235,7 @@ class Home extends Component {
         {/*Counter end*/}
         {/* slider area Start */}
         <div className="bg_slider">
-          <div className="slider_without"></div>
+         <Revslider/>
         </div>
         {/* slider area end */}
       </>

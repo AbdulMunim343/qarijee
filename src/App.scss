@@ -1,7 +1,9 @@
 @import "./sass/variables.scss";
 @import "./sass/mixin.scss";
 
-
+body {
+  overflow-x: hidden;
+}
 
 .section_bg {
   padding: 60px 0;
@@ -17,4 +19,49 @@
   max-width: 100%;
   padding: 0px 15px;
   margin: auto;
+}
+
+.slider_without {
+  .mian_slid {
+    width: 1140px !important;
+    max-width: 100%;
+    margin: auto;
+    padding: 15px;
+  }
+  .Slide {
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0 5px 0;
+      color: $textWhite;
+    }
+    h4 {
+      font-size: 14px;
+      color: $enroll;
+    }
+    p {
+      color: $enroll;
+      margin-top: 30px;
+    }
+
+    .qout {
+      font-size: 25px;
+      padding: 0px 5px;
+    }
+  }
+}
+
+.notes-slider li.slick-active button::before {
+  font-size: 15px;
+}
+
+.notes-slider .slick-dots li button:before {
+  font-size: 15px;
 }

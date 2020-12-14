@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import {NavLink} from 'react-router-dom';
 import '../navbar/Navbar.scss';
-
+import {AiOutlineClose} from "react-icons/ai";
 
 
 
@@ -48,8 +48,8 @@ class Navbar extends Component{
          </li>
       </ul>
    </nav>
-   {/* 
-   <div class="Login_container">
+   
+   {/* <div class="Login_container">
       <div className="login_warpper">
          <div className="top_log">
             <h3>New to site? 
@@ -66,8 +66,29 @@ class Navbar extends Component{
          </form>
          <a href="#" className="lost">Lost password?</a>
       </div>
-   </div>
-   */}
+
+       
+      <div className="login_warpper">
+         <div className="top_log">
+            <h3>New to site? 
+               <a href="#">Login</a>
+            </h3>
+            <AiOutlineClose className="cls"/>
+         </div>
+         <hr/>
+         <h1>Login</h1>
+         <form>
+            <input type="text" placeholder="User Name"/>
+            <input type="text" placeholder="Email"/>
+            <input type="text" placeholder="Password"/>
+            <input type="text" placeholder="Confirm Password"/>
+            <button type="submit">Sign Up</button>
+         </form>
+      
+      </div>
+
+   </div> */}
+  
 </header>
             </>
         )
