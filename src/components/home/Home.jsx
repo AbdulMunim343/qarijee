@@ -13,6 +13,9 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
+// ==== import routing ==== 
+import {Link} from "react-router-dom"
+
 const Card = (props) => {
   return (
     <>
@@ -153,7 +156,11 @@ class Home extends Component {
             })}
             {/* courses  end*/}
             <div className="btnWrapper">
-              <button>Show More</button>
+                <Link style={{color:"white",textDecoration:"none"}} to="/courses" className="routerLink">
+              <button>
+                Show More
+              </button>
+              </Link>
             </div>
           </div>
         </div>
