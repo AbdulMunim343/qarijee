@@ -11,7 +11,8 @@ import Contact from './components/contact/Contact';
 import Navbar from './common/navbar/Navbar';
 import Footer from "./common/footer/Footer";
 
-
+// ===== import messanger component =====//
+import MessengerCustomerChat from "./components/messanger/mesanger"
 
 
 
@@ -26,6 +27,7 @@ class App extends Component{
                     <Route path='/membership' component={Membership}/>
                     <Route path='/contact' component={Contact}/>
                 </Switch>
+            <MessengerCustomerChat/>
             <Footer/>
             </>
         )
