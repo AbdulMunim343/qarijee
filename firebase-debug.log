@@ -1,0 +1,14 @@
+[debug] [2020-12-15T12:13:20.852Z] ----------------------------------------------------------------------
+[debug] [2020-12-15T12:13:20.855Z] Command:       /usr/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-12-15T12:13:20.855Z] CLI Version:   8.16.2
+[debug] [2020-12-15T12:13:20.855Z] Platform:      linux
+[debug] [2020-12-15T12:13:20.855Z] Node Version:  v12.20.0
+[debug] [2020-12-15T12:13:20.855Z] Time:          Tue Dec 15 2020 17:13:20 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-12-15T12:13:20.856Z] ----------------------------------------------------------------------
+[debug] [2020-12-15T12:13:20.856Z] 
+[debug] [2020-12-15T12:13:20.862Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-15T12:13:20.862Z] > authorizing via signed-in user
+[debug] [2020-12-15T12:13:20.863Z] [iam] checking project qarijee-web for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-15T12:13:20.865Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-15T12:13:20.866Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
