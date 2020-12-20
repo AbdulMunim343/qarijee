@@ -1,0 +1,55 @@
+#container {
+  width: "100%";
+  /* margin-top: 10vh; */
+  height: 100vh;
+  background-color: rgb(225, 244, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#authSection {
+  width: 70vw;
+  height: 60vh;
+  border: 1px solid black;
+}
+
+#authHeader {
+  width: 100%;
+  border: none;
+  height: 15%;
+}
+#authHeader > button {
+  width: 50%;
+  height: 100%;
+  border: 1px solid black;
+  border-right: none;
+  background-color: white;
+}
+.authInputSection {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formInput {
+  display: block;
+  width: 50%;
+  height: 35%;
+  margin-top: 1%;
+}
+
+.authButtonSection {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 10%;
+}
+
+.authButton {
+  width: 50%;
+  height: 100%;
+}
