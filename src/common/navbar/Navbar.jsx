@@ -13,10 +13,7 @@ const Under = {
 
 export default function Navbar() {
   let [authStatus, setAuthStatus] = useContext(appContext);
-  let handleLogOut = () => {
-    firebase.auth().signOut();
-    setAuthStatus(false);
-  };
+
   return (
     <>
       <header>
@@ -51,8 +48,8 @@ export default function Navbar() {
             </NavLink>
             <li>
               {authStatus ? (
-                <Link onClick={handleLogOut}>
-                  <span>{"Logout"}</span>
+                <Link to="/user/dashboard/">
+                  <span>{"Dashboard"}</span>
                 </Link>
               ) : (
                 <Link to="/auth/">

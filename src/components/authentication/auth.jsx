@@ -1,14 +1,14 @@
 import React, { useState, useContext } from "react";
 import "./auth.css";
 import firebase from "firebase";
-import { Switch, Route, Link, Redirect } from "react-router-dom";
+import { Switch, Route, Link, Redirect ,useHistory} from "react-router-dom";
 
 //context
 import { appContext } from "../../context";
 
 export default function Auth() {
   const [authStatus, setAuthStatus] = useContext(appContext);
-
+  let history = useHistory()
   return (
     <div id="container">
       <section id="authSection">
@@ -22,15 +22,18 @@ export default function Auth() {
         </article>
         <Switch>
           <Route exact path="/auth/">
-            {authStatus.login ? (
-              <Redirect from="/auth" to={"/user/dashboard/"} />
+            {authStatus ? (
+              // <Redirect to={"/user/dashboard/"} />
+              history.push('/user/dashboard/')
             ) : (
               <SignIn setAuthStatus={setAuthStatus} />
             )}
           </Route>
           <Route path="/auth/signup">
-            {authStatus.login ? (
-              <Redirect from="/auth/" to={"/user/dashboard/"} />
+            {authStatus? (
+              // <Redirect to={"/user/dashboard/"} />
+              history.push('/user/dashboard/')
+
             ) : (
               <SignUp setAuthStatus={setAuthStatus} />
             )}
@@ -50,7 +53,7 @@ function SignIn({ setAuthStatus }) {
       .auth()
       .signInWithEmailAndPassword(email, password)
       .then((res) => {
-        setAuthStatus({login:true,email:res.email});
+        setAuthStatus(true);
       })
       .catch((err) => {
         console.log(err);
@@ -101,7 +104,7 @@ function SignUp({ setAuthStatus }) {
       .auth()
       .createUserWithEmailAndPassword(email, confirmPassword)
       .then((res) => {
-        setAuthStatus({login:true,email:res.email});
+        setAuthStatus(true);
       })
       .catch((err) => {
         console.log(err);

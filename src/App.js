@@ -32,7 +32,7 @@ export default function App() {
     useEffect(() => {
         firebase.auth().onAuthStateChanged(res => {
             if (res != null) {
-                setAuthStatus({login:true,email:res.email})
+                setAuthStatus(true)
             }
         })
     })
