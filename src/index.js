@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App'
-import {BrowserRouter} from 'react-router-dom';
-
+import { BrowserRouter } from 'react-router-dom';
+import ContextProvider from './context'
 
 ReactDOM.render(
-    <>
-  <BrowserRouter>
-    <App/>
-</BrowserRouter>
+  <ContextProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
 
-  </>,document.getElementById("root")
+  </ContextProvider>, document.getElementById("root")
 )

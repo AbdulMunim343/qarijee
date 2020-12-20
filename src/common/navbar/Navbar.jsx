@@ -1,54 +1,68 @@
-import React,{Component} from "react";
-import {NavLink} from 'react-router-dom';
-import '../navbar/Navbar.scss';
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
+import "../navbar/Navbar.scss";
+import { Link } from "react-router-dom";
+import firebase from "firebase";
 
-
-
+// context
+import { appContext } from "../../context";
 
 const Under = {
-    textDecoration:'none',
-  }
+  textDecoration: "none",
+};
 
-
-
-
-
-class Navbar extends Component{
-    render(){
-        return(
-            <>
-<header>
-   <nav>
-      <div className="logo">
-         <h1>Qari Jee</h1>
-      </div>
-      <ul>
-         <NavLink exact activeClassName="nav_active" to="/" style={Under}>
+export default function Navbar() {
+  let [authStatus, setAuthStatus] = useContext(appContext);
+  let handleLogOut = () => {
+    firebase.auth().signOut();
+    setAuthStatus(false);
+  };
+  return (
+    <>
+      <header>
+        <nav>
+          <div className="logo">
+            <h1>Qari Jee</h1>
+          </div>
+          <ul>
+            <NavLink exact activeClassName="nav_active" to="/" style={Under}>
+              <li>
+                <span>Home</span>
+              </li>
+            </NavLink>
+            <NavLink activeClassName="nav_active" to="/courses" style={Under}>
+              <li>
+                <span>Courses</span>
+              </li>
+            </NavLink>
+            <NavLink
+              activeClassName="nav_active"
+              to="/membership"
+              style={Under}
+            >
+              <li>
+                <span>Membership</span>
+              </li>
+            </NavLink>
+            <NavLink activeClassName="nav_active" to="/contact" style={Under}>
+              <li>
+                <span>Contact</span>
+              </li>
+            </NavLink>
             <li>
-               <span>Home</span>
+              {authStatus ? (
+                <Link onClick={handleLogOut}>
+                  <span>{"Logout"}</span>
+                </Link>
+              ) : (
+                <Link to="/auth/">
+                  <span>{"Login"}</span>
+                </Link>
+              )}
             </li>
-         </NavLink>
-         <NavLink activeClassName="nav_active" to="/courses" style={Under}>
-            <li>
-               <span>Courses</span>
-            </li>
-         </NavLink>
-         <NavLink activeClassName="nav_active" to="/membership" style={Under}>
-            <li>
-               <span>Membership</span> 
-            </li>
-         </NavLink>
-         <NavLink activeClassName="nav_active" to="/contact" style={Under}>
-            <li>
-               <span>Contact</span>   
-            </li>
-         </NavLink>
-         <li>
-            <span>Login</span>   
-         </li>
-      </ul>
-   </nav>
-   {/* 
+          </ul>
+        </nav>
+        {/* 
    <div class="Login_container">
       <div className="login_warpper">
          <div className="top_log">
@@ -68,11 +82,7 @@ class Navbar extends Component{
       </div>
    </div>
    */}
-</header>
-            </>
-        )
-    }
+      </header>
+    </>
+  );
 }
-
-
-export default Navbar;
