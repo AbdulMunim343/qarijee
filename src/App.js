@@ -10,6 +10,8 @@ import Membership from './components/membership/Membership';
 import Contact from './components/contact/Contact';
 import Navbar from './common/navbar/Navbar';
 import Footer from "./common/footer/Footer";
+import Signup from './components/signup/Signup';
+
 
 //==============import Courses Sub pages=============//
 import Subcourses from './components/courses/subcourses/Subcourses';
@@ -23,6 +25,12 @@ class App extends Component{
     render(){
         return(
             <>
+            
+<Switch>
+        <Route path="/signup" component={Signup}/>
+               
+        
+        <div>        
             <Navbar/>
                 <Switch>
                     <Route exact path='/' component={Home}/>
@@ -35,6 +43,8 @@ class App extends Component{
                     
                 </Switch>
             <Footer/>
+        </div>
+</Switch>
             </>
         )
     }

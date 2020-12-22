@@ -43,9 +43,11 @@ class Navbar extends Component{
                <span>Contact</span>   
             </li>
          </NavLink>
+         <NavLink to="/signup" style={Under}>
          <li>
             <span>Login</span>   
          </li>
+         </NavLink>
       </ul>
    </nav>
    
