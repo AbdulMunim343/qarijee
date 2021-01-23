@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../home/Home.scss";
+import "../home/home.scss";
 import External from "../../common/external/External";
 import WQ from "./WQ";
 import Qarijee_data from "./Qrijeebox";
