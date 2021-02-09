@@ -9,7 +9,7 @@ const  Qarijee_data = [
     {
         data_img:Hifz,
         data_name:"Saqib Sohail",
-        data_tech:'Sheikh',
+        data_tech:'Hifz',
       
        
     },
@@ -17,7 +17,7 @@ const  Qarijee_data = [
     {
         data_img:Team2,
         data_name:"Muhammad Asad",
-        data_tech:'Sheikh',
+        data_tech:'Nazra',
        
        
     },
@@ -25,7 +25,7 @@ const  Qarijee_data = [
     {
         data_img:Team3,
         data_name:"Asad Sultan",
-        data_tech:'Sheikh',
+        data_tech:'Hadees',
        
       
         
@@ -34,7 +34,7 @@ const  Qarijee_data = [
     {
         data_img:Team4,
         data_name:"Abdul Wahid",
-        data_tech:'Sheikh',
+        data_tech:'Fiqh',
       
        
     },

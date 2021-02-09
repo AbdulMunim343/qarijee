@@ -3,6 +3,7 @@ import "../home/Home.scss";
 import External from "../../common/external/External";
 import WQ from "./WQ";
 import Qarijee_data from "./Qrijeebox";
+import Revslider from "../../common/external/Revslider";
 
 //======import images=====//
 import Holy from "../../assets/img/top_bg.png";
@@ -11,9 +12,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-
-// ==== import routing ==== 
-import {Link} from "react-router-dom"
 
 const Card = (props) => {
   return (
@@ -157,11 +155,7 @@ class Home extends Component {
             </div>
             {/* courses  end*/}
             <div className="btnWrapper">
-                <Link style={{color:"white",textDecoration:"none"}} to="/courses" className="routerLink">
-              <button>
-                Show More
-              </button>
-              </Link>
+              <button>Show More</button>
             </div>
           </div>
         </div>
@@ -243,7 +237,7 @@ class Home extends Component {
         {/*Counter end*/}
         {/* slider area Start */}
         <div className="bg_slider">
-          <div className="slider_without"></div>
+         <Revslider/>
         </div>
         {/* slider area end */}
       </>
