@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../home/home.scss";
+import "../home/Home.scss";
 import External from "../../common/external/External";
 import WQ from "./WQ";
 import Qarijee_data from "./Qrijeebox";
@@ -141,6 +141,7 @@ class Home extends Component {
               </p>
             </div>
             {/* courses  Start*/}
+          <div className="Flex_con">
             {External.slice(0, 3).map((Extval) => {
               return (
                 <Card
@@ -153,6 +154,7 @@ class Home extends Component {
                 />
               );
             })}
+            </div>
             {/* courses  end*/}
             <div className="btnWrapper">
                 <Link style={{color:"white",textDecoration:"none"}} to="/courses" className="routerLink">

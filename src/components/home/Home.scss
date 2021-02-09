@@ -75,7 +75,6 @@
 }
 
 .cardholder {
-  display: flex;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -83,15 +82,15 @@
   background: #fff;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
+  width: calc(100% / 3);
   .card_img {
-    width: 150px;
     max-width: 100%;
     object-fit: cover;
     img {
       width: 100%;
-      height: 100%;
       object-fit: cover;
-    }
+      height: 200px;
+      }
   }
   .card_details2 {
     display: flex;
@@ -240,7 +239,7 @@
   display: flex;
   justify-content: space-between;
   .counterBox {
-    width: calc(100% / 3.1);
+    width: calc(100% / 3.5);
 
     span {
       display: block;
@@ -303,4 +302,10 @@
       font-size: 18px !important;
     }
   }
+}
+
+.Flex_con{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }

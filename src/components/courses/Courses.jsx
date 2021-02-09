@@ -7,10 +7,10 @@ const Card = (props) => {
   return (
     <>
       <div className="cardholder">
-        <div className="card_img2">
+        <div className="card_img">
           <img src={props.Cardimg} />
         </div>
-        <div className="card_details">
+        <div className="card_details2">
           <h4 className="card_had">{props.Cardhead}</h4>
 
           <p>{props.Cardes}</p>
@@ -37,6 +37,7 @@ class Courses extends Component {
             <h1>Courses</h1>
           </div>
           {/* courses  Start*/}
+          <div className="Flex_con">
           {External.map((Extval) => {
             return (
               <Card
@@ -49,6 +50,7 @@ class Courses extends Component {
               />
             );
           })}
+          </div> 
           {/* courses  end*/}
         </div>
       </>

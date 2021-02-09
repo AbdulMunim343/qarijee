@@ -37,6 +37,7 @@ class Membership extends Component{
       <h1>Membership</h1>
    </div>
    {/* courses  Start*/}
+   <div className="Flex_con">
    {Members.map((Extval)=>{
    return(
    <Card
@@ -48,6 +49,7 @@ class Membership extends Component{
       />
    )  
    })}
+   </div>
    {/* courses  end*/}
 </div>
             </>
