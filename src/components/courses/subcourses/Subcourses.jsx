@@ -31,7 +31,7 @@ class Subcourses extends  Component{
 
 <div className="sc_container">
    
-{External.map((Csval)=>{
+{External.slice(4).map((Csval)=>{
          return(
             <CoureVal 
                Cardhead = {Csval.Cardhead}
@@ -48,20 +48,7 @@ class Subcourses extends  Component{
          <button type="submit">Enroll</button>
       </div>
    </div>
-   <h3 class="meta-title">Course Instructor</h3>
-   <div className="instrc_container">
-      <img src={Inct} className="inct_img"/>
-      <span className="author_name">Admin</span>
-      <span className="author_lable">Author</span>         
    </div>
-   <div className="lms_list_con">
-      <h3>Getting Started</h3>
-      <div className="llms-lesson-link">
-         <h5>Why Lifter LMS</h5>
-         <p>1 to 5</p>
-      </div>
-   </div>
-</div>
             </>
         )
     }

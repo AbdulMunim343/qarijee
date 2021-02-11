@@ -13,6 +13,7 @@ import Navbar from './common/navbar/Navbar';
 import Footer from "./common/footer/Footer";
 import Auth from './components/authentication/auth';
 import DashboardWrapper from './components/Dashboard/dashboard';
+import Subcourses from './components/courses/subcourses/Subcourses'
 
 // ===== import messanger component =====//
 import MessengerCustomerChat from "./components/messanger/mesanger"
@@ -45,6 +46,7 @@ export default function App() {
                 <Route path='/courses' component={Courses} />
                 <Route path='/membership' component={Membership} />
                 <Route path='/contact' component={Contact} />
+                <Route path="/subcourse" component={Subcourses}/>
                 <Route path='/auth/' component={Auth} />
                 <Route path='/user/dashboard/' component={DashboardWrapper} />
             </Switch>

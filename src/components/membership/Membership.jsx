@@ -32,26 +32,25 @@ class Membership extends Component{
     render(){
         return(
             <>
-<div className="main_courses">
-   <div className="itleConatine">
-      <h1>Membership</h1>
-   </div>
-   {/* courses  Start*/}
-   <div className="Flex_con">
-   {Members.map((Extval)=>{
-   return(
-   <Card
-      Cardimg={Extval.Cardimg}
-      Cardhead = {Extval.Cardhead}
-      Cardes = {Extval.Cardes}
-      Cardthumb = {Extval.Cardthumb}
-      Cardname = {Extval.Cardname}
-      />
-   )  
-   })}
-   </div>
-   {/* courses  end*/}
-</div>
+            <div className="main_courses">
+            <div className="itleConatine">
+               <h1>Membership</h1>
+            </div>
+            {/* courses  Start*/}
+            <div className="Flex_con">
+               {Members.map((Extval)=>{
+               return(
+               <Card
+                  Cardimg={Extval.Cardimg}
+                  Cardhead = {Extval.Cardhead}
+                  Cardes = {Extval.Cardes}
+                  Cardthumb = {Extval.Cardthumb}
+                  Cardname = {Extval.Cardname}
+                  />
+               )})}
+            </div>
+            {/* courses  end*/}
+         </div>
             </>
         )
     }
