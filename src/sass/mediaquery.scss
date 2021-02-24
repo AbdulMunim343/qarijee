@@ -1,5 +1,12 @@
 /*I Pad*/
 @media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .cardholder_member{
+width: 47%;
+  }
+  
+  .cardholder{
+    width: 47%;
+  }
   .hero {
     height: 66vh;
     text-align: center;
@@ -201,6 +208,10 @@
     text-align: center;
   }
 
+.cardholder_member{
+    width: 100%;
+}
+
   /*top Banner Start*/
   .hero_container {
     flex-direction: column;
@@ -370,6 +381,7 @@
   /*courses start*/
   .cardholder {
     flex-direction: column;
+   width: 100%;
     .card_img {
       height: 32vh !important;
       width: 100%;
@@ -463,4 +475,20 @@
   .footer {
     flex-direction: column;
   }
+
+  /*slider bg image*/
+  .bg_slider{
+    background-size: auto;
+  }
 }
+
+// nav ul{
+//   position: absolute;
+//   background-color: white;
+//   right: 0;
+//   flex-direction: column;
+//   height: 200vh;
+//   width: 50%;
+//   justify-content: center;
+//   align-items: center;
+// }

@@ -140,7 +140,7 @@ class Home extends Component {
             </div>
             {/* courses  Start*/}
           <div className="Flex_con">
-            {External.slice(0, 3).map((Extval) => {
+            {External.map((Extval) => {
               return (
                 <Card
                   Cardimg={Extval.Cardimg}
