@@ -1,3 +1,4 @@
+
 import React,{Component} from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,6 +9,27 @@ import "slick-carousel/slick/slick-theme.css";
 //========import icons==========//
 import {ImQuotesLeft} from "react-icons/im";
 import {ImQuotesRight} from "react-icons/im";
+
+const Slide = () => {
+return(
+   <>
+
+   <div className="Slide">
+   <h3>Mohsin Khan</h3>
+   <h4>Hdees</h4>
+   <p>
+      <i className="qout">
+         <ImQuotesLeft/>
+      </i>
+      Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+      <i className="qout">
+         <ImQuotesRight/>
+      </i>
+   </p>
+</div>
+   </>
+)
+}
 
 
 class Revslider extends  Component{
@@ -33,50 +55,7 @@ render(){
    <div className="mian_slid">
    
    <Slider {...settings}>
-  
-      
-      <div className="Slide">
-         <h3>Mohsin Khan</h3>
-         <h4>Hdees</h4>
-         <p>
-            <i className="qout">
-               <ImQuotesLeft/>
-            </i>
-            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-            <i className="qout">
-               <ImQuotesRight/>
-            </i>
-         </p>
-      </div>
-
-      <div className="Slide">
-         <h3>Mohsin Khan</h3>
-         <h4>Hdees</h4>
-         <p>
-            <i className="qout">
-               <ImQuotesLeft/>
-            </i>
-            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-            <i className="qout">
-               <ImQuotesRight/>
-            </i>
-         </p>
-      </div>
-
-      <div className="Slide">
-         <h3>Mohsin Khan</h3>
-         <h4>Hdees</h4>
-         <p>
-            <i className="qout">
-               <ImQuotesLeft/>
-            </i>
-            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-            <i className="qout">
-               <ImQuotesRight/>
-            </i>
-         </p>
-      </div>
-     
+   <Slide/>
    </Slider>
    </div>
 </div>
